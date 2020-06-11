@@ -63,11 +63,11 @@ window.onbeforeunload = () => {
     localStorage.setItem("x", string)
 }
 
-$(document).on('keypress', (e) => {
-    const { key } = e  //简写 const key = e.key
-    for (let i = 0; i < hashMap.length; i++) {
-        if (hashMap[i].logo.toLowerCase() === key) {
-            window.open(hashMap[i].url)
-        }
-    }
-})
+// $(document).on('keypress', (e) => {
+//     const { key } = e  //简写 const key = e.key
+//     for (let i = 0; i < hashMap.length; i++) {
+//         if (hashMap[i].logo.toLowerCase() === key) {
+//             window.open(hashMap[i].url)
+//         }
+//     }
+// })

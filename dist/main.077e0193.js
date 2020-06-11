@@ -174,16 +174,13 @@ $('.addButton').on('click', function () {
 window.onbeforeunload = function () {
   var string = JSON.stringify(hashMap);
   localStorage.setItem("x", string);
-};
-
-$(document).on('keypress', function (e) {
-  var key = e.key; //简写 const key = e.key
-
-  for (var i = 0; i < hashMap.length; i++) {
-    if (hashMap[i].logo.toLowerCase() === key) {
-      window.open(hashMap[i].url);
-    }
-  }
-});
+}; // $(document).on('keypress', (e) => {
+//     const { key } = e  //简写 const key = e.key
+//     for (let i = 0; i < hashMap.length; i++) {
+//         if (hashMap[i].logo.toLowerCase() === key) {
+//             window.open(hashMap[i].url)
+//         }
+//     }
+// })
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.e9749308.js.map
+//# sourceMappingURL=main.077e0193.js.map
